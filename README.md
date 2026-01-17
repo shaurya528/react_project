@@ -1,18 +1,28 @@
-# Todo List App (React)
 
-A simple Todo List application built using React to practice basic concepts.
+# React Basics Projects 🚀
 
-## Features
-- Add a new todo
-- Delete a todo
-- Mark todo as completed
-- Uses React Hooks (useState)
+This repository contains multiple beginner React projects
+built inside a single React (Vite) application.
 
-## Tech Stack
+## 📂 Components / Mini Projects
+
+- ✅ Todo App  
+  📁 `src/components/Todo`  
+  Concepts: useState, props, event handling
+
+- 🎮 Tic Tac Toe  
+  📁 `src/components/TicTacToe`  
+  Concepts: state management, conditional rendering, game logic
+
+## 🛠 Tech Stack
 - React
-- JavaScript
-- HTML
-- CSS
+- JavaScript (ES6)
+- Vite
+- CSS / Tailwind
+
+## 📌 Learning Goal
+Building projects without tutorials to focus on fundamentals
+instead of chasing perfection.
 
 ## How to Run
 1. Clone the repository

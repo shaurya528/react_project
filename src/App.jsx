@@ -1,10 +1,15 @@
-import Task from "./todo/Task";
+import Grid from "./component/TicTacToe/Grid/Grid";
+
 
 function Display() {
-  return ( <div>
-   <Task/>
-
-  </div> );
+  return (<>
+  
+  <div>
+   <Grid numberofcard={9}/>
+  </div>
+  </>
+    
+    );
 }
 
 export default Display;
