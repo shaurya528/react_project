@@ -28,6 +28,13 @@ function Grid({ numberofcard }) {
     Array(numberofcard).fill(null)
   );
     const [winner, setWinner] = useState("");
+
+function reset(){
+  setTurn(true);
+  setBoad( Array(numberofcard).fill(null));
+  setWinner("")
+}
+
   function play(index) {
    if(winner) return ;
    if(boad[index]) return ;
@@ -35,7 +42,7 @@ function Grid({ numberofcard }) {
    let newboad=[...boad];
    newboad[index]=turn ? 'O':'X'
 
-    const win = iswinner(boad, turn ? "O" : "X");
+    const win = iswinner(newboad, turn ? "O" : "X");
     if (win) {
       setWinner(win);
     }
@@ -45,7 +52,13 @@ function Grid({ numberofcard }) {
   }
   return (
     <>
-      {winner && <h1>the winer is {winner}</h1>}
+      {winner && (<>
+
+        <h1>the winer is {winner}</h1>
+        <button onClick={reset} class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"> RESET game</button>
+        
+        </>
+        )}
       <h1> Now Turn {turn ? "O" : "X"}</h1>
       <div className="flex size-[315px] flex-wrap gap-1">
         {boad.map((value, idx) => {
