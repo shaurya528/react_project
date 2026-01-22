@@ -1,11 +1,11 @@
-import Grid from "./component/TicTacToe/Grid/Grid";
+import Passwordgenerator from "./component/Passwordgenerator/Password";
 
 
 function Display() {
   return (<>
   
   <div>
-   <Grid numberofcard={9}/>
+   <Passwordgenerator/>
   </div>
   </>
     
